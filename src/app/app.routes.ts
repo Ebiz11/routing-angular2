@@ -1,6 +1,8 @@
 import { ModuleWithProviders } from "@angular/core";
 import { RouterModule} from "@angular/router";
 
+import { canActivateGuard } from "./guard/canActivate.guard";
+
 import { loginComponent } from "./login/login.component";
 import { adminComponent } from "./admin/admin.component";
 import { landingPageComponent } from "./landing-page/landing-page.component";
@@ -21,6 +23,7 @@ export const routing: ModuleWithProviders = RouterModule.forRoot ([
   },
   {
     path: 'admin',
-    component: adminComponent
+    component: adminComponent,
+    canActivate: [canActivateGuard]
   }
 ]);
