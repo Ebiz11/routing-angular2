@@ -8,6 +8,7 @@ import { Validators, FormBuilder, FormControl, FormGroup } from "@angular/forms"
 })
 
 export class loginComponent implements OnInit {
+  title = "Login Form";
 
   constructor(private router: Router, private builder: FormBuilder) { }
 

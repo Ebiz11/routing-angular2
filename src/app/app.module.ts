@@ -11,12 +11,15 @@ import { loginComponent } from './login/login.component';
 import { adminComponent } from "./admin/admin.component";
 import { landingPageComponent } from "./landing-page/landing-page.component";
 
+import { footballClubComponent } from "./admin/football-club/football-club.component";
+
 @NgModule({
   declarations: [
     AppComponent,
     loginComponent,
     adminComponent,
     landingPageComponent,
+    footballClubComponent,
   ],
   imports: [
     BrowserModule,

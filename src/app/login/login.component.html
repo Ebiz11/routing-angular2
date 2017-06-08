@@ -1,14 +1,14 @@
-<h1>Login Form</h1>
+<h1>{{title}}</h1>
 
 <form [formGroup]="loginForm" (ngSubmit)="logIn()">
 
   <div>
-    <label for="username">username</label>
+    <label for="username">Username</label>
 
     <input type="text" name="username" id="username" [formControl]="username">
 
     <div [hidden]="username.valid || username.untouched">
-      <div> The following problems have been found with the username: </div>
+      <div> *The following problems have been found with the username: </div>
       <div [hidden]="!username.hasError('minlength')"> Username can not be shorter than 5 characters.</div>
       <div [hidden]="!username.hasError('required')">Username is required.</div>
     </div>
@@ -16,12 +16,12 @@
   </div>
 
   <div >
-    <label for="password">password</label>
+    <label for="password">Password</label>
     <input type="password" name="password" id="password" [formControl]="password">
 
     <div [hidden]="password.valid || password.untouched">
       <div>The following problems have been found with the password:</div>
-      <div [hidden]="!password.hasError('required')">The password is required.</div>
+      <div [hidden]="!password.hasError('required')">*The password is required.</div>
     </div>
   </div>
 

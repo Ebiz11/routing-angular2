@@ -6,6 +6,7 @@ import { Router } from "@angular/router";
   templateUrl: './admin.component.html',
 })
 export class adminComponent implements OnInit {
+  title = "Dashboard";
 
   constructor(private router: Router) {}
 

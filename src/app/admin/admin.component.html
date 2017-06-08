@@ -1,2 +1,10 @@
-<h2>Admin Page</h2>
-<button (click)="logOut()">logOut</button>
+<h2>{{title}}</h2>
+
+<nav>
+  <a routerLink='club'>Club</a>
+  <a routerLink='players'>Players</a>
+  <a (click)="logOut()">logOut</a>
+</nav>
+
+<br><br>
+<router-outlet></router-outlet>
