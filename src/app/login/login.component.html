@@ -23,6 +23,10 @@
       <div>The following problems have been found with the password:</div>
       <div [hidden]="!password.hasError('required')">*The password is required.</div>
     </div>
+
+    <div [hidden]="!password.hasError('needsExclamation')">
+      Your password must have an exclamation mark!
+    </div>
   </div>
 
   <button type="submit" [disabled]="!loginForm.valid">Log In</button>

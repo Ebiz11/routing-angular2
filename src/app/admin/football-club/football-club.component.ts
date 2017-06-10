@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class footballClubComponent implements OnInit {
   title = "Manage your football club here";
+  player: string = "I am player";
+
   constructor() {}
+
   ngOnInit() {}
+
+  yell(e){
+    alert("I am yelling");
+  }
 }

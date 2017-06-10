@@ -1,8 +1,9 @@
 import { Routes } from "@angular/router";
 
 import { adminComponent } from "./admin.component";
-import { footballPlayersComponent } from "./football-players/football-players.component";
 import { footballClubComponent } from "./football-club/football-club.component";
+import { footballPlayersComponent } from './football-players/football-players.component';
+import { footballPlayersRoutes } from './football-players/football-players.routes';
 
 export const adminRoutes: Routes = [
   {
@@ -20,8 +21,9 @@ export const adminRoutes: Routes = [
       },
       {
         path: 'players',
-        loadChildren: './football-players/football-players.module#footballPlayersModule'
-      }
+        component: footballPlayersComponent
+      },
+      ...footballPlayersRoutes
     ]
   }
 ]

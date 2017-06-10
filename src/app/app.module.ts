@@ -12,6 +12,8 @@ import { adminComponent } from "./admin/admin.component";
 import { landingPageComponent } from "./landing-page/landing-page.component";
 
 import { footballClubComponent } from "./admin/football-club/football-club.component";
+import { footballPlayersComponent } from './admin/football-players/football-players.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { footballClubComponent } from "./admin/football-club/football-club.compo
     adminComponent,
     landingPageComponent,
     footballClubComponent,
+    footballPlayersComponent
   ],
   imports: [
     BrowserModule,

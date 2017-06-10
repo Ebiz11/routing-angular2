@@ -1,1 +1,17 @@
-<h3>{{title}}</h3>
+<h3>{{title }}</h3>
+
+<nav>
+<a routerLink = "central-forward">Central Forward</a>
+<a routerLink = "midfielder">Midfielder</a>
+<a routerLink = "goal-keeper">Goal Keeper</a>
+</nav>
+
+<!-- <br><br> -->
+<!-- <button (click)="fireYellEvent($event)">Hit Me</button> -->
+
+<div style="color: green; margin-top: 1rem;">New Outlet:</div>
+<div style="border: 2px solid blue; padding: 1rem;">
+  <router-outlet name="player"></router-outlet>
+</div>
+
+<router-outlet ></router-outlet>

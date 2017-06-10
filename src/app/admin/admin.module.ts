@@ -5,6 +5,7 @@ import { adminRoutes } from "./admin.routes";
 
 import { adminComponent } from "./admin.component";
 import { footballClubComponent } from "./football-club/football-club.component";
+import { footballPlayersComponent } from './football-players/football-players.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import { footballClubComponent } from "./football-club/football-club.component";
   ],
   declarations: [
     footballClubComponent,
+    footballPlayersComponent,
     adminComponent
   ]
 

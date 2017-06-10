@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { footballPlayersComponent } from "./football-players.component";
-import { footballPlayersRouting } from "./football-players.routing";
+import { footballPlayersRoutes } from "./football-players.routes";
 
 @NgModule({
   imports: [
     CommonModule,
-    footballPlayersRouting
+    footballPlayersRoutes
   ],
   declarations: [
     footballPlayersComponent
